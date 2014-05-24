@@ -1,4 +1,4 @@
 Dissertacao
 ===========
 
-Arquivos usados em minha dissertação.
+Arquivos usados na dissertação.
