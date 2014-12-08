@@ -1,0 +1,30 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: dissertacao.aux
+The style file: abntex2-alf.bst
+Database file #1: abntex2-options.bib
+Database file #2: dissert.bib
+Repeated entry---line 15 of file dissert.bib
+ : @article{aleman2011
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 226 of file dissert.bib
+ : @article{figueiredo2012
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 337 of file dissert.bib
+ : @article{Martin2001
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 496 of file dissert.bib
+ : @article{strom2010
+ :                   ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "1992"
+Warning--I didn't find a database entry for "2007"
+Warning--I didn't find a database entry for "austen1998"
+Warning--campo year vazio em freitas2012
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex2.googlecode.com                           |
++---------------------------------------------------------+
+(There were 4 error messages)

@@ -1,0 +1,64 @@
+% -------------------------------------------------------------
+% Source da minha Dissertação de Mestrado em Ciência Política
+% -------------------------------------------------------------
+
+% DOCUMENTO
+\documentclass[article,12pt,oneside,a4paper,spanish,english,brazilian]{abntex2}
+
+% CONFIGURACOES DO PPGPOL
+\usepackage{PPGPOL}
+
+% INFORMACOES
+\titulo{Coalizões governamentais sobredimensionadas na América Latina, 1978-2010}
+\author{Fernando Meireles}
+\data{2014}
+\instituicao{Universidade Federal do Rio Grande do Sul}
+\departamento{Instituto de Filosofia e Ciência Humanas}
+\programa{Programa de Pós-Graduação em Ciência Política}
+\local{Porto Alegre}
+\tipotrabalho{Dissertação (Mestrado)}
+\orientador{Dr. Paulo Sérgio Peres}
+\preambulo{Dissertação apresentada ao Programa de Pós-Graduação em Ciência Política do Instituto de Filosofia e Ciências Humanas da Universidade Federal do Rio Grande do Sul como requisito parcial para a obtenção do título de Mestre em Ciência Política.}
+
+% PDF
+\definecolor{minha}{RGB}{59,95,95}
+\makeatletter
+\hypersetup{
+pdftitle={\@title},
+pdfauthor={Fernando Meireles},
+pdfsubject={Dissertação (Mestrado)},
+pdfcreator={LaTex},
+pdfkeywords={Presidencialismo}{Relações Executivo-Legislativo}{Coalizões Governamentais},
+colorlinks=true,
+linkcolor=minha,
+citecolor=minha,
+filecolor=black,
+urlcolor=minha,bookmarksdepth=4}
+\makeatother
+\checkandfixthelayout
+
+% TEXTO
+\begin{document}
+\pretextual
+\imprimircapa
+\imprimirfolhaderosto
+\textual
+
+% Resumo
+\input{resumo}
+\newpage
+
+% Abstract
+
+
+% Introducao
+\input{introducao}
+\newpage
+
+% Segunda seção
+\input{revisao}
+\newpage
+
+\bibliography{dissert}
+
+\end{document}
