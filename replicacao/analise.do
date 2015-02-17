@@ -1,5 +1,5 @@
 **************************
-* Replicacao dissertação *
+* Replicacao dissertaÃ§Ã£o *
 *			 *
 *      1/2/2015		 *
 *			 *
@@ -7,7 +7,7 @@
 
 
 set more off
-use "C:\Users\User\Desktop\bd3.dta", clear
+use "~\bd3.dta", clear
 
 
 ***********************
@@ -48,7 +48,7 @@ logit surplusDummy presid veto cda presdom pres_seats range1 distance1 cicle h_p
 
 
 ***********************
-* Apêndices
+* ApÃªndices
 ***********************
 
 * Tabela 4
@@ -82,13 +82,13 @@ logit surplusDummy negretto_leg1 pres_seats range1 distance1 cicle h_polcon3 t t
 logit surplusDummy negretto_leg1 pres_seats range1 distance1 cicle h_polcon3 t t2 t3 infl enp jw_avgballot fh_status al_ethnic, vce(cluster presid)
 
 * TABELA 6
-* Modelo - Bolívia
+* Modelo - BolÃ­via
 logit surplusDummy negretto_leg1 pres_seats range1 distance1 cicle h_polcon3 t t2 t3 infl enp, vce(cluster presid)
 
 * Modelo - Brasil
 logit surplusDummy negretto_leg1 pres_seats range1 distance1 cicle h_polcon3 t t2 t3 infl enp, vce(cluster presid)
 
-* Modelo - Colômbia
+* Modelo - ColÃ´mbia
 logit surplusDummy negretto_leg1 pres_seats range1 distance1 cicle h_polcon3 t t2 t3 infl enp, vce(cluster presid)
 
 * Modelo - Peru
@@ -99,7 +99,7 @@ logit surplusDummy negretto_leg1 pres_seats range1 distance1 cicle h_polcon3 t t
 * GRAFICOS
 ***********************
 
-* Grafico (dependência temporal)
+* Grafico (dependÃªncia temporal)
 logit surplusDummy negretto_leg1 pres_seats range1 distance1 cicle h_polcon3 t t2 t3 infl enp, vce(cluster presid)
 
 egen mnegretto_leg1=mean(negretto_leg1)
