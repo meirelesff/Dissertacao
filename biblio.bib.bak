@@ -3,7 +3,7 @@
 
 
 @Article{acosta2011,
-  Title                    = {Coalition erosion and presidential instability in Ecuador},
+  Title                    = {Coalition erosion and presidential instability in {E}cuador},
   Author                   = {Acosta, Andr{\'e}s Mej{\'\i}a and Polga-Hecimovich, John},
   Journal                  = {Latin American Politics and Society},
   Year                     = {2011},
@@ -22,8 +22,25 @@
   Publisher                = {University of Note Dame (Indiana, Estado Unidos). Kellogg Institute for International Studies}
 }
 
+@TechReport{alcantara2012,
+  Title                    = {Elections in Latin America 2009--2011: a comparative analysis},
+  Author                   = {Alc{\'a}ntara, Manuel and others},
+  Institution              = {Kellogg Institute},
+  Year                     = {2012}
+}
+
+@Article{aleman2007,
+  Title                    = {Legislative preferences, political parties, and coalition unity in {C}hile},
+  Author                   = {Alem{\'a}n, Eduardo and Saiegh, Sebasti{\'a}n M},
+  Journal                  = {Comparative Politics},
+  Year                     = {2007},
+  Pages                    = {253--272},
+
+  Publisher                = {JSTOR}
+}
+
 @Article{Aleman2011,
-  Title                    = {Political parties and government coalitions in the Americas},
+  Title                    = {Political parties and government coalitions in the {A}mericas},
   Author                   = {Alem{\'a}n, Eduardo and Tsebelis, George},
   Journal                  = {Journal of Politics in Latin America},
   Year                     = {2011},
@@ -33,7 +50,7 @@
 }
 
 @Article{aleman2011,
-  Title                    = {Political parties and government coalitions in the Americas},
+  Title                    = {Political parties and government coalitions in the {A}mericas},
   Author                   = {Alem{\'a}n, Eduardo and Tsebelis, George},
   Journal                  = {Journal of Politics in Latin America},
   Year                     = {2011},
@@ -43,7 +60,7 @@
 }
 
 @Article{altman2000,
-  Title                    = {The Politics of Coalition Formation and Survival in Multiparty Presidential Democracies The Case of Uruguay, 1989-1999},
+  Title                    = {The Politics of Coalition Formation and Survival in Multiparty Presidential Democracies: The Case of {U}ruguay, 1989-1999},
   Author                   = {Altman, David},
   Journal                  = {Party politics},
   Year                     = {2000},
@@ -55,7 +72,7 @@
 }
 
 @Article{altman2008,
-  Title                    = {CABINET DETERMINANTS OF STRUCTURAL REFORMS IN LATIN AMERICA, 1985--2000},
+  Title                    = {Cabinet determinants of structural reforms in {L}atin {A}merica, 1985--2000},
   Author                   = {Altman, David and Castiglioni, Rossana},
   Journal                  = {The Developing Economies},
   Year                     = {2008},
@@ -67,13 +84,12 @@
 }
 
 @InCollection{alvarez2010,
-  Title                    = {"Presidential and Democratic Breakdowns in {L}atin {A}merica: Similar Causes, Different Outcomes"},
+  Title                    = {"{P}residential and Democratic Breakdowns in {L}atin {A}merica: Similar Causes, Different Outcomes"},
   Author                   = {Alvarez, Michael E and Marsteintredet, Leiv},
+  Booktitle                = {Llanos y Marsteintredet (ed.). LLANOS, Mariana; MARSTEINTREDET, Leiv (Ed.). Presidential breakdowns in Latin America: Causes and outcomes of executive instability in developing democracies},
   Publisher                = {Palgrave-Macmillan},
   Year                     = {2010},
-  Pages                    = {33--50},
-
-  Journal                  = {Llanos y Marsteintredet (ed.). LLANOS, Mariana; MARSTEINTREDET, Leiv (Ed.). Presidential breakdowns in Latin America: Causes and outcomes of executive instability in developing democracies}
+  Pages                    = {33--50}
 }
 
 @Article{neto2006,
@@ -102,7 +118,7 @@
 
 @Article{neto2002,
   Title                    = {Governos de Coaliz\~ao e Mecanismos de Alarme de Inc\^endio no Controle Legislativo das Medidas Provis\'orias},
-  Author                   = {{Amorim Neto}, Octavio and Tafner, Paulo},
+  Author                   = {{AMORIM NETO}, Octavio and Tafner, Paulo},
   Journal                  = {Dados},
   Year                     = {2002},
   Number                   = {1},
@@ -140,8 +156,32 @@
   Year                     = {1970}
 }
 
+@Article{baker2011,
+  Title                    = {The Latin American left's mandate: free-market policies and issue voting in new democracies},
+  Author                   = {Baker, Andy and Greene, Kenneth F},
+  Journal                  = {World Politics},
+  Year                     = {2011},
+  Number                   = {01},
+  Pages                    = {43--77},
+  Volume                   = {63},
+
+  Publisher                = {Cambridge Univ Press}
+}
+
+@Article{benito2010,
+  Title                    = {La pol{\'\i}tica del poder: Alianzas e interacciones partidistas estrat{\'e}gicas en {R}ep{\'u}blica {D}ominicana},
+  Author                   = {{BENITO S{\'A}NCHEZ}, Ana Bel{\'e}n},
+  Journal                  = {Revista de ciencia pol{\'\i}tica (Santiago)},
+  Year                     = {2010},
+  Number                   = {3},
+  Pages                    = {751--772},
+  Volume                   = {30},
+
+  Publisher                = {SciELO Chile}
+}
+
 @Article{berntzen1993,
-  Title                    = {Democratic consolidation in Central America: a qualitative comparative approach},
+  Title                    = {Democratic consolidation in {C}entral {A}merica: a qualitative comparative approach},
   Author                   = {Berntzen, Einar},
   Journal                  = {Third World Quarterly},
   Year                     = {1993},
@@ -150,6 +190,18 @@
   Volume                   = {14},
 
   Publisher                = {Taylor \& Francis}
+}
+
+@Article{breuer2008,
+  Title                    = {The problematic relation between direct democracy and accountability in {L}atin {A}merica: Evidence from the {B}olivian case},
+  Author                   = {Breuer, Anita},
+  Journal                  = {Bulletin of Latin American Research},
+  Year                     = {2008},
+  Number                   = {1},
+  Pages                    = {1--23},
+  Volume                   = {27},
+
+  Publisher                = {Wiley Online Library}
 }
 
 @InProceedings{camerlo2012,
@@ -250,7 +302,7 @@
 }
 
 @Article{cox2001,
-  Title                    = {Latin America's reactive assemblies and proactive presidents},
+  Title                    = {Latin {A}merica's reactive assemblies and proactive presidents},
   Author                   = {Cox, Gary W and Morgenstern, Scott},
   Journal                  = {Comparative Politics},
   Year                     = {2001},
@@ -269,6 +321,34 @@
   Volume                   = {29},
 
   Publisher                = {Wiley Online Library}
+}
+
+@Article{doyle2014,
+  Title                    = {Maximizing the Reliability of Cross-National Measures of Presidential Power},
+  Author                   = {Doyle,David and Elgie,Robert},
+  Journal                  = {British Journal of Political Science},
+  Year                     = {2014},
+
+  Month                    = {12},
+  Pages                    = {1--11},
+  Volume                   = {FirstView},
+
+  Doi                      = {10.1017/S0007123414000465},
+  ISSN                     = {1469-2112},
+  Numpages                 = {11},
+  Url                      = {http://journals.cambridge.org/article_S0007123414000465}
+}
+
+@Article{dunkerley2007,
+  Title                    = {Evo {M}orales, the two {B}olivias and the third {B}olivian revolution},
+  Author                   = {Dunkerley, James},
+  Journal                  = {Journal of Latin American Studies},
+  Year                     = {2007},
+  Number                   = {01},
+  Pages                    = {133--166},
+  Volume                   = {39},
+
+  Publisher                = {Cambridge Univ Press}
 }
 
 @Article{Figueiredo2012,
@@ -291,6 +371,22 @@
   Volume                   = {55},
 
   Publisher                = {SciELO Brasil}
+}
+
+@Book{figueiredo1999,
+  Title                    = {Executivo e Legislativo na nova ordem constitucional},
+  Author                   = {Figueiredo, Argelina Cheibub and Limongi, Fernando},
+  Publisher                = {Editora FGV Rio de Janeiro},
+  Year                     = {1999}
+}
+
+@Article{folha2007,
+  Title                    = {"Se combinou, tem de entregar", diz Walfrido},
+  Author                   = {{FOLHA DE SAO PAULO}},
+  Journal                  = {Folha de S\~ao Paulo},
+  Year                     = {2007},
+
+  Url                      = {http://www1.folha.uol.com.br/fsp/brasil/fc2303200713.htm}
 }
 
 @Article{foweraker1998,
@@ -334,7 +430,7 @@
 }
 
 @Article{hiroi2014,
-  Title                    = {(Forhtcoming) Dimensions of Legislative Conflict: Coalitions, Obstructionism, and Lawmaking in Multiparty Presidential Regimes},
+  Title                    = {(Forhtcoming) {D}imensions of Legislative Conflict: Coalitions, Obstructionism, and Lawmaking in Multiparty Presidential Regimes},
   Author                   = {Hiroi, Taeko and Renno, Lucio},
   Journal                  = {Legislative Studies Quarterly},
   Year                     = {2014}
@@ -383,6 +479,14 @@
   Publisher                = {The Johns Hopkins University Press}
 }
 
+@Book{linz1994,
+  Title                    = {The failure of presidential democracy},
+  Author                   = {Linz, Juan J and Valenzuela, Arturo},
+  Publisher                = {JHU Press},
+  Year                     = {1994},
+  Volume                   = {1}
+}
+
 @Book{luebbert1986,
   Title                    = {Comparative democracy: Policymaking and governing coalitions in Europe and Israel},
   Author                   = {Luebbert, Gregory M},
@@ -400,6 +504,30 @@
   Volume                   = {26},
 
   Publisher                = {Sage Publications}
+}
+
+@Article{mars2008,
+  Title                    = {Executive-Legislative Deadlocks in the {D}ominican {R}epublic},
+  Author                   = {Marsteintredet, Leiv},
+  Journal                  = {Latin American Politics and Society},
+  Year                     = {2008},
+  Number                   = {2},
+  Pages                    = {131--160},
+  Volume                   = {50},
+
+  Publisher                = {Wiley Online Library}
+}
+
+@Article{marsteintredet2008,
+  Title                    = {Executive-Legislative Deadlocks in the {D}ominican {R}epublic},
+  Author                   = {Marsteintredet, Leiv},
+  Journal                  = {Latin American Politics and Society},
+  Year                     = {2008},
+  Number                   = {2},
+  Pages                    = {131--160},
+  Volume                   = {50},
+
+  Publisher                = {Wiley Online Library}
 }
 
 @Article{martin2001,
@@ -448,15 +576,24 @@
   Year                     = {2013}
 }
 
+@Article{montero2013,
+  Title                    = {El procedimiento legislativo en {A}m{\'e}rica {L}atina},
+  Author                   = {Montero, Mercedes Garc{\'\i}a},
+  Journal                  = {Am{\'e}rica Latina Hoy},
+  Year                     = {2013},
+  Pages                    = {17--55},
+  Volume                   = {38}
+}
+
 @Book{negretto2013,
-  Title                    = {Making Constitutions: Presidents, Parties, and Institutional Choice in Latin America},
+  Title                    = {Making Constitutions: Presidents, Parties, and Institutional Choice in {L}atin {A}merica},
   Author                   = {Negretto, Gabriel L},
   Publisher                = {Cambridge University Press},
   Year                     = {2013}
 }
 
 @Article{negretto2006,
-  Title                    = {Minority presidents and democratic performance in Latin America},
+  Title                    = {Minority presidents and democratic performance in {L}atin {A}merica},
   Author                   = {Negretto, Gabriel L},
   Journal                  = {Latin American Politics and Society},
   Year                     = {2006},
@@ -468,7 +605,7 @@
 }
 
 @Article{negretto2004,
-  Title                    = {Government Capacities and Policy Making by Decree in Latin America The Cases of Brazil and Argentina},
+  Title                    = {Government Capacities and Policy Making by Decree in {L}atin {A}merica: The Cases of {B}razil and {A}rgentina},
   Author                   = {Negretto, Gabriel L},
   Journal                  = {Comparative Political Studies},
   Year                     = {2004},
@@ -506,8 +643,20 @@
   Publisher                = {Sage Publications}
 }
 
+@Article{pereira2000,
+  Title                    = {Uma teoria da preponder{\^a}ncia do poder Executivo: O sistema de comiss{\~o}es no Legislativo brasileiro},
+  Author                   = {Pereira, Carlos and Mueller, Bernardo},
+  Journal                  = {Revista Brasileira de Ci{\^e}ncias Sociais},
+  Year                     = {2000},
+  Number                   = {43},
+  Pages                    = {45--67},
+  Volume                   = {15},
+
+  Publisher                = {SciELO Brasil}
+}
+
 @Article{pereira2005,
-  Title                    = {Under what conditions do presidents resort to decree power? Theory and evidence from the Brazilian case},
+  Title                    = {Under what conditions do presidents resort to decree power? Theory and evidence from the {B}razilian case},
   Author                   = {Pereira, Carlos and Power, Timothy J and Renn{\'o}, Lucio},
   Journal                  = {Journal of Politics},
   Year                     = {2005},
@@ -519,7 +668,7 @@
 }
 
 @Article{power2010,
-  Title                    = {Optimism, pessimism, and coalitional presidentialism: Debating the institutional design of Brazilian democracy},
+  Title                    = {Optimism, pessimism, and coalitional presidentialism: Debating the institutional design of {B}razilian democracy},
   Author                   = {Power, Timothy J},
   Journal                  = {Bulletin of Latin American Research},
   Year                     = {2010},
@@ -539,6 +688,18 @@
   Publisher                = {Sage Publications}
 }
 
+@Article{riggs1988,
+  Title                    = {The survival of presidentialism in {A}merica: Para-constitutional practices},
+  Author                   = {Riggs, Fred W},
+  Journal                  = {International Political Science Review},
+  Year                     = {1988},
+  Number                   = {4},
+  Pages                    = {247--278},
+  Volume                   = {9},
+
+  Publisher                = {Sage Publications}
+}
+
 @Book{riker1962,
   Title                    = {The theory of political coalitions},
   Author                   = {Riker, William H},
@@ -548,7 +709,7 @@
 }
 
 @Article{saalfeld2000,
-  Title                    = {Members of parliament and governments in Western Europe: Agency relations and problems of oversight},
+  Title                    = {Members of parliament and governments in {W}estern {E}urope: Agency relations and problems of oversight},
   Author                   = {Saalfeld, Thomas},
   Journal                  = {European Journal of Political Research},
   Year                     = {2000},
@@ -557,6 +718,18 @@
   Volume                   = {37},
 
   Publisher                = {Wiley Online Library}
+}
+
+@Article{saiegh2009,
+  Title                    = {Political prowess or Lady Luck? Evaluating chief executives legislative success rates},
+  Author                   = {Saiegh, Sebastian M},
+  Journal                  = {The Journal of Politics},
+  Year                     = {2009},
+  Number                   = {04},
+  Pages                    = {1342--1356},
+  Volume                   = {71},
+
+  Publisher                = {Cambridge Univ Press}
 }
 
 @Article{samuels2003,
@@ -571,12 +744,11 @@
   Publisher                = {Sage Publications}
 }
 
-@Misc{estadao,
-  Title                    = {Câmara derruba decreto de conselho popular de Dilma},
-
-  Author                   = {O Estado de São Paulo},
-  HowPublished             = {Disponível em: \url{http://goo.gl/rJPuXB}},
-  Note                     = {Acessado em: 3 de novembro de 2014}
+@Book{scott1998,
+  Title                    = {Cocaine politics: Drugs, armies, and the CIA in Central America},
+  Author                   = {Scott, Peter Dale and Marshall, Jonathan},
+  Publisher                = {Univ of California Press},
+  Year                     = {1998}
 }
 
 @InCollection{shepsle1986,
@@ -592,6 +764,13 @@
   Author                   = {Shugart, Matthew Soberg and Carey, John M},
   Publisher                = {Cambridge University Press},
   Year                     = {1992}
+}
+
+@Book{stein2006,
+  Title                    = {The politics of policies: Economic and social progress in Latin America 2006 Report},
+  Author                   = {Stein, Ernesto and others},
+  Publisher                = {Harvard Univ Press},
+  Year                     = {2006}
 }
 
 @Article{stepan1993,
@@ -679,5 +858,32 @@
   Volume                   = {48},
 
   Publisher                = {Wiley Online Library}
+}
+
+@Article{wie2009,
+  Title                    = {Presidents, parties, and policy competition},
+  Author                   = {Wiesehomeier, Nina and Benoit, Kenneth},
+  Journal                  = {The Journal of Politics},
+  Year                     = {2009},
+  Number                   = {04},
+  Pages                    = {1435--1447},
+  Volume                   = {71},
+
+  Publisher                = {Cambridge Univ Press}
+}
+
+@Article{aleman2013,
+  Title                    = {Latin American Legislative Politics: A Survey of Peer-Reviewed Publications in English},
+  Journal                  = {Journal of Politics in Latin America},
+  Year                     = {2013},
+  Number                   = {1},
+  Pages                    = {15-36},
+  Volume                   = {5},
+
+  Abstract                 = {This study discusses basic trends in articles on legislative politics in Latin America published in twelve journals between 2000 and 2010. It examines the distribution of the articles over time and by journal, the authors’ institutional affiliations and patterns of collaboration, the frequency with which various countries are studied, and common approaches and topics. The articles in this set are all peer-reviewed and published in English.},
+  ISSN                     = {1868-4890},
+  Keywords                 = {Latin America; publication; book; journal; peer review},
+  Unknown                  = {Eduardo Alemán},
+  Url                      = {http://journals.sub.uni-hamburg.de/giga/jpla/article/view/613}
 }
 

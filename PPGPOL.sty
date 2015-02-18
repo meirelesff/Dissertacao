@@ -30,7 +30,7 @@
 \usepackage{charter}
 \usepackage[LGRgreek]{mathastext}
 
-% CONFIGURACOES DA PAGINA
+% CONFIGURACOES DA PAGINA 
 \usepackage{indentfirst}		
 \usepackage{nomencl} 			
 \usepackage{color}			
@@ -38,6 +38,12 @@
 \usepackage{microtype} 
 \usepackage{setspace}
 \usepackage{pgfgantt}
+\usepackage{lastpage}
+\usepackage{placeins}
+
+\setlrmarginsandblock{3cm}{2cm}{*}
+\setulmarginsandblock{3cm}{2cm}{*}
+\checkandfixthelayout
 
 % GRAFICOS E SIMBOLOS
 \usepackage{tikz}
@@ -45,11 +51,34 @@
 \usepackage{float}
 
 % SERIFA O TITULO DAS SECOES
-\renewcommand{\ABNTEXsectionfont}{\rmfamily}
-\renewcommand{\ABNTEXchapterfont}{\rmfamily}
+\renewcommand{\ABNTEXsectionfont}{\rmfamily \bfseries}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsectionfont}{\rmfamily}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXchapterfont}{\rmfamily \bfseries}
+\renewcommand{\ABNTEXchapterfontsize}{\fontsize{14pt}{18pt}\selectfont}
+\setlength{\beforechapskip}{80pt-\baselineskip}
+\setlength{\afterchapskip}{30pt-\baselineskip}
 
 % CONFIGURACOES DAS REFERENCIAS REFERENCIAS
 \usepackage[alf,abnt-and-type=e,abnt-repeated-author-omit=yes, abnt-etal-cite=2]{abntex2cite}
+
+% PDF
+\definecolor{minha}{RGB}{59,95,95}
+\makeatletter
+\hypersetup{
+pdftitle={\@title},
+pdfauthor={Fernando Meireles},
+pdfsubject={Dissertação (Mestrado)},
+pdfcreator={LaTex},
+pdfkeywords={Presidencialismo}{Relações Executivo-Legislativo}{Coalizões Governamentais},
+colorlinks=true,
+linkcolor=minha,
+citecolor=minha,
+filecolor=black,
+urlcolor=minha,bookmarksdepth=4}
+\makeatother
+\checkandfixthelayout
 
 % NOVOS COMANDOS
 
@@ -93,8 +122,7 @@
 \makeatletter
 \renewcommand{\folhaderostocontent}{
 \begin{center}
-{\ABNTEXchapterfont
-\large\scshape\imprimirautor}
+{\large\scshape\imprimirautor}
 \vspace*{\fill}
 \begin{center}
 {\bfseries\large\MakeUppercase {\imprimirtitulo}}

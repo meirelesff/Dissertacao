@@ -1,44 +1,31 @@
-\documentclass{letter}
-\usepackage{tikz}
-\usetikzlibrary{patterns}
-\usepackage{caption}
-\usepackage{subcaption}
+\section{Hipóteses}
+\label{sec:hipoteses}
 
-\def\firstcircle{(2.4,3.2) circle [radius=1.9]}
-\def\secondcircle{(3,4) circle [radius=1]}
-\def\thirdcircle{(4,5) circle [radius=1]}
-\def\ponto{(3,5) circle [radius=0.06]}
+Presidentes geralmente possuem varias opções ao formar um gabinete multipartidário. Em alguns casos, um mesmo país pode experimentar diversos tipos de coalizão\footnote{Na Bolívia, por exemplo, a coalizão do último governo de Gonzálo de Lozada contava, no início, com quase 70\% de cadeiras no congresso; nos dois governos subsequentes, de Carlos Mesa e Rodríguez Veltes, coalizões sequer foram formadas.}. Nos extremos, em países como Brasil e Chile coalizões sobredimensionadas são comuns; em outros, especialmente nos da América Central, praticamente inexistentes\footnote{A única exceção presente nos dados que serão apresentados na sequência é o governo de Leonel Fernández entre 2006 e 2009, na República Dominicana. Anos antes, na Nicarágua, o governo Violeta Chamorro manteve um membro da oposição (Contras) no cargo de Ministro da Defesa, mas o arranjo estava longe de implicar uma coalizão legislativa (BERNTZEN, \citeyear{berntzen1993}, p. 598)}. Nesta seção, discuto três hipóteses mais gerais sobre a formação de coalizões sobredimensionadas em sistemas presidencialistas. Duas delas relacionam o tamanho das coalizões com a estrutura institucional que regula as relações entre executivo e legislativo, alterando a distribuição de poderes legislativos e de investigação entre os legisladores e o presidente; a outra, por sua vez, enfatiza o poder de barganha dos membros da coalizão.
 
-\tikzset{
-        hatch distance/.store in=\hatchdistance,
-        hatch distance=10pt,
-        hatch thickness/.store in=\hatchthickness,
-        hatch thickness=2pt
-    }
+Em primeiro lugar, congressos fortes impediriam que presidentes conseguissem governar de forma unilateral e, deste modo, os incentivariam a formar coalizões (ALEMAN e TSEBELIS, \citeyear{aleman2011}; COX e MORGENSTERN, \citeyear{cox2001}). Como aprovar leis é uma função governamental essencial numa democracia, legislativos capazes de estabelecer quais questões serão votadas, em qual ordem e de que forma podem se valer disso para extrair vantagens do executivo, negociando de forma \textit{ad hoc} as matérias de interesse deste. Além disso, este efeito tende a se potencializar onde existem duas casas legislativas e onde a coordenação intrapartidária e a fragmentação partidária interferem na sintonia entre elas (Cf. VOLDEN e CARRUBA, \citeyear{volden2004}, p. 526). Em última instância, um presidente preocupado com \textit{policy} e, portanto, com seus eleitores, buscará o suporte do congresso para que a sua agenda não seja desconsiderada, ou mesmo para que o congresso não governe por cima dele. Assim, seria racional para um presidente alinhar suas preferências com as do congresso e, não sendo isto possível, compensar os custos que ele tem ao apoiá-lo: no caso, distribuindo tantos ministérios, para tantos partidos, quantos forem necessários para assegurar o controle da agenda legislativa. 
 
-    \makeatletter
-    \pgfdeclarepatternformonly[\hatchdistance,\hatchthickness]{flexible hatch}
-    {\pgfqpoint{0pt}{0pt}}
-    {\pgfqpoint{\hatchdistance}{\hatchdistance}}
-    {\pgfpoint{\hatchdistance-1pt}{\hatchdistance-1pt}}%
-    {
-        \pgfsetcolor{\tikz@pattern@color}
-        \pgfsetlinewidth{\hatchthickness}
-        \pgfpathmoveto{\pgfqpoint{0pt}{0pt}}
-        \pgfpathlineto{\pgfqpoint{\hatchdistance}{\hatchdistance}}
-        \pgfusepath{stroke}
-    }
-\begin{document}
+Outra dimensão da força do legislativo está relacionada com a capacidade de fiscalizar e checar o executivo. Sistemas de comissões legislativas, especialmente quando suas jurisdições coincidem com as dos ministérios existentes, podem ser usadas como mecanismo de "controle de incêndio"~ para evitar que ministros abusem da assimetria de informações entre eles e o legislativo (MARTIN e VANBERG, \citeyear{martin2011}). Além disso, congressos também podem investigar o executivo e, num extremo, derrubar presidentes -- como no caso do presidente equatoriano Abdala Bucaram, que foi impedido sob a alegação de incapacidade mental por uma maioria simples (ACOSTA e POLGA-HECIMOVICH, \citeyear{acosta2011}, p. 100). Para evitar esses \textit{checks}, uma alternativa é trazer os partidos com poder de vetar essas ações para dentro da coalizão: uma vez que estejam associados, a utilidade dos parceiros depende da manutenção do equilíbrio que os levou, em primeiro lugar, a cooperar; sendo assim, presidentes manteriam esses partidos na coalizão porque antecipam represálias e estes, por sua vez, evitam usar represálias enquanto a utilidade de pertencer ao governo superar a de atacá-lo\footnote{Há, também, a mesma questão para o legislativo: por que partidos no congresso cooperariam com o presidente? Duas respostas aqui são possíveis. A primeira é de que, se eles procuram cargos, participar de um ministério é uma boa forma de obtê-los. A segunda é a de que, procuram implementar suas agendas, os partidos comparariam a utilidade de manter-se fora do governo e vencer as próximas eleições com a utilidade de integrar o governo (CHEIBUB, \citeyear{cheibub2007}). Assim, a questão principal não é tanto da oferta de parceiros de coalizão, mas de demanda por cooperação.}. Em suma, esses fatores indicam que haveria, \textit{coeteris paribus}, uma relação proporcional entre força do legislativo e tamanho da coalizão.
 
-\begin{tikzpicture}
-\begin{scope}[fill opacity=0.5]
-\clip \thirdcircle;
-\fill[pattern=flexible hatch, hatch distance=5.5pt, hatch thickness=0.35pt] \secondcircle;
-\end{scope}
-\fill[black] \ponto node[above]{$SQ$};
-\draw[thick] \firstcircle node[below]{A};
-\draw[thick] \secondcircle node{P};
-\draw[thick] \thirdcircle node{C};
-\draw[very thick,<->] (0,6) -- (0,1) -- (7,1);
-\end{tikzpicture}
-\end{document}
+\vspace*{1\baselineskip}\vspace*{-\parskip}
+\noindent
+\textit{HIPÓTESE 1}: quanto mais forte for o legislativo, maior a probabilidade de surgirem coalizões sobredimensionadas.
+\vspace*{1\baselineskip}
+
+Evidentemente, um presidente que deseja formar uma coalizão deve considerar não apenas quantos partidos farão parte dela, mas também como será a relação entre estes. Em coalizões muito fragmentadas, por exemplo, há sempre a possibilidade de que surjam conflitos entre membros, especialmente quando eventos imprevistos ocorrem (DIERMEIR, 2006; LAVER e SHEPSLE, \citeyear{laver1996}). Por outro lado, essa mesma fragmentação também pode ser explorada pelo presidente para reduzir custos de transação entre os parceiros de governo. Isto ocorreria simplesmente porque, quando existem mais partidos numa coalizão do que o necessário para se obter maioria, a única forma do governo perder apoio é se dois ou mais partidos desertarem simultaneamente. Entretanto, isso pode gerar um problema coordenativo entre eles: se um partido A, digamos, sai da coalizão e B permanece, o governo não cai e aquele arrisca sofrer punições, como a realocação de seus ministérios. Em situações como esta, ambos esperariam que o outro partido desertasse, mas, no agregado, nada aconteceria (Cf. CROMBEZ, \citeyear{crombez1996}; VOLDEN e CARRUBA, \citeyear{volden2004})\footnote{Ainda que tenha sido originalmente formulado para o parlamentarismo (Cf. CROMBEZ, \citeyear{crombez1996}), esse modelo não depende de nenhum pressuposto inerente àquele sistema de governo para ser válido, como mostram Volden e Carruba (\citeyear{volden2004}): o equilíbrio só depende do incentivo que os partidos têm de continuar participando da coalizão no futuro.}. De forma geral, em suma, se o custo de adicionar um partido à coalizão for compensado pela redução do poder de barganha dos demais membros, e se o número de partidos for grande o suficiente para permitir ameaças de substituição de membros, presidentes teriam incentivos para incluir um maior número de partidos em suas coalizões.
+
+\vspace*{1\baselineskip}\vspace*{-\parskip}
+\noindent
+\textit{HIPÓTESE 2}: quanto mais fragmentado for o legislativo, maior a probabilidade de surgirem coalizões sobredimensionadas.
+\vspace*{1\baselineskip}
+
+De todo modo, alguns fatores podem dificultar, ou mesmo impedir, o surgimento de coalizões sobredimensionadas independentemente de outros incentivos. A literatura sobre o tema acumula evidências de como alguns aspectos institucionais incentivariam presidentes a governar unilateralmente (e. g., ALVAREZ e MARSTEITREDET, \citeyear{alvarez2010}; AMORIM NETO, \citeyear{neto2006}; COX e MORGENSTERN, \citeyear{cox2001}; NEGRETTO, \citeyear{negretto2004}, \citeyear{negretto2006}; SHUGART e CAREY, \citeyear{shugart1992}). Segundo estes estudos, a probabilidade disto ocorrer aumenta, e. g., por conta do uso estratégico de decretos legislativos e pedidos de urgência para controlar a agenda do congresso, o que poderiam conferir aos presidentes meios efetivos de contornar o processo legislativo ordinário. De forma análoga, presidentes podem contar com prerrogativas de veto total ou parcial, o que lhes possibilita usá-los para extrair concessões, manter o \textit{status quo} e, no caso do último, evitar ter de carregar \textit{riders}, os “penduricalhos”, ao aprovarem suas agendas. Entre outros poderes que podem dar vantagem a um presidente em relação ao congresso, também estão exclusividade na formulação e execução do processo orçamentário, livre nomeação de ministros sem sujeição à censuras, possibilidade de requerer pedidos de urgência e iniciar processos de consulta popular sem aprovação do congresso (NEGRETTO, \citeyear{negretto2013}; SHUGART e CAREY, \citeyear{shugart1992}). No geral, destas prerrogativas formais se deduz que
+
+\vspace*{1\baselineskip}\vspace*{-\parskip}
+\noindent
+\textit{HIPÓTESE 3}: quanto mais extensos e efetivos forem os poderes legislativos de um presidente, menor a probabilidade de surgirem coalizões sobredimensionadas.
+\vspace*{1\baselineskip}
+
+Estas hipóteses são, evidentemente, apenas algumas das possíveis explicações para o fenômeno. Como outros estudos sugerem, fatores como polarização na assembleia e extremismo ideológico do presidente tornariam governos minoritários mais prováveis, já que aumentariam a distância ideológica relativa entre os partidos do congresso e os custos de transação entre os membros da coalizão (CHEIBUB, \citeyear{cheibub2007}; LAVER e SHEPSLE, \citeyear{laver1996}; STR\O{}M et al., \citeyear{strom2010}). A popularidade do presidente e o tempo restante para as próximas eleições, por seu turno, afetam os incentivos que os demais partidos teriam para cooperar com o executivo: quando o presidente sofre com altas taxas de rejeição ou quando as eleições estão próximas, se afastar do governo e assumir um discurso de oposição pode ser uma boa estratégia para angariar votos (ALTMAN, \citeyear{altman2000}; MARTINEZ-GALLARDO, \citeyear{martinez2012}; SHUGART e CAREY, \citeyear{shugart1992}). Do mesmo modo, a existência de descentralização político-administrativa e de muitos atores com poder de veto sobre a agenda presidencial amplia a base com que os incumbentes têm de negociar para que qualquer proposta seja aprovada, o que pode induzir a distribuição de ministérios entre um maior número de partidos. Por essas razões, estes e outros fatores também devem ser controlados. 
+
+Por fim, cabe uma ressalva quanto ao efeito da disciplina partidária no tamanho dos gabinetes. Uma das possíveis explicações para o surgimento de coalizões sobredimensionadas seria a de que presidentes adicionariam mais partidos as suas coalizões para compensar a baixa disciplina partidária, o que seria recorrente em alguns países presidencialistas, como o Brasil (Cf. POWER, \citeyear{power2010}, p. 26)\footnote{Para alguns autores, como Jones (\citeyear{jones1995}) e Linz (\citeyear{linz1990}), a indisciplina poderia servir aos interesses de presidentes, que poderiam cooptar membros indisciplinados de outros partidos quando necessário, contornando, assim, \textit{gridlock}; é com base nisso que Jones estabelece seu critério de 45\% de apoio para se considerar um presidente majoritário, dado que seria simples obter outros 5\% mais um de forma ad hoc.  Por outro lado, a indisciplina poderia tornar imprevisíveis os resultados das votações, além de tornar instáveis as bases legislativas de cada presidente (MARTINEZ-GALLARDO, \citeyear{martinez2012}; SAIEGH, \citeyear{saiegh2009}). Desse modo, o efeito da disciplina sobre a formação de coalizões não é óbvio (AMORIM NETO, \citeyear{neto2006}).}. Dois motivos principais, contudo, me levam a não explorar essa possibilidade diretamente. O primeiro é óbvio e incontornável: não existem dados que cubram todos os países-ano incluídos na amostra. Em segundo lugar, existem razões teóricas suficientes para justificar que a disciplina não é um bom indicador do sucesso presidencial. Como Cheibub (\citeyear{cheibub2007}) sustenta, a maior parte dos estudos sobre a dominância do executivo tende a atribuir pesos idênticos a todas as votações, isto é, considerar as médias de aprovação como indicadores de desempenho legislativo. Isto seria equivocado porque, em primeiro lugar, algumas votações são obviamente mais importantes que outras e, em segundo lugar, porque tendo assegurada uma maioria, os líderes partidários poderiam liberar parte de suas bancadas, deixando, assim, margem para que os parlamentares atendessem as suas bases. No que segue, portanto, não considero diretamente o efeito da disciplina partidária, embora use diversos \textit{checks} para dar maiores garantias de que os resultados reportados não se devem a sua omissão.

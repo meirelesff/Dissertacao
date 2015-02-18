@@ -1,0 +1,147 @@
+\chapter{Resultados}
+\label{chap:resultados}
+
+Os resultados dos principais modelos estimados estão na~\hyperref[table:tabela1]{Tabela 1}. Os modelos 1, 2 e 3 são versões do modelo básico: o primeiro utiliza o índice de poder presidencial composto por 14 indicadores; o 2 utilizada apenas três destes indicadores; e o 3 inclui uma variável de efetividade do legislativo. Os modelos 4 e o 5 são regressões binomiais negativas com o número de partidos adicionais como variável dependente
+
+\begin{table}[htb]
+\IBGEtab{\caption{Determinantes da ocorrência de coalizões governamentais sobredimensionadas na América Latina, 1979-2012}
+\label{table:tabela1}
+}{%
+\begin{tabular}{lccccc}
+\toprule
+{} & \textbf{Modelo 1} & \textbf{Modelo 2} & \textbf{Modelo 3} & \textbf{Modelo 4} & \textbf{Modelo 5} \\
+\midrule
+Número efetivo de partidos & 0.21 & 0.29** & 0.36 & 0.30*** & 0.18** \\
+{} & (0.14) & (0.14) & (0.32) & (0.11) & (0.08) \\
+Força do legislativo (Polcon3) & 3.55** & 4.19** & 6.56** & 2.86** & 2.65** \\
+{} & (1.83) & (2.16) & (3.42) & (1.16) & (1.62) \\
+Poder presidencial & 0.04** & & & 0.03*** & \\
+{} & (0.02) & & & (0.01)&  \\
+Efetividade do legislativo & & & 1.01* & & 1.64*** \\
+{} & & & (0.57) & & (0.43) \\
+Poder de veto &  & -3.02 & 1.13 & & -4.7** \\
+{} &  & (2.11) & (7.32) & & (2.43) \\
+Controle do orçamento &  & 0.28 & 0.29 & & -1.82** \\
+{} &  & (0.93) & (1.12) &  & (0.88) \\
+Decreto legislativo &  & 1.92 & 3.32 & & -0.72 \\
+{} & & (1.63) & (3.43) & & (0.98) \\
+Extremismo do presidente & -1.15** & -1.3*** & -1.81** & -0.93*** & -0.55** \\
+{} & (0.45) & (0.42) & (0.65) & (0.26) & (0.23) \\
+Polarização no congresso & -9.06** & -6.63* & -17.06** & -4.93** & -10.63*** \\
+{} & (3.82) & (3.52) & (7) & (2.35) & (2.98) \\
+Ciclo eleitoral & 1.77** & 1.95** & 2.98** & 0.52* &  0.83*\\
+{} & (0.92) & (0.98) & (1.5) & (0.31) & (0.48) \\
+\% de cadeiras do presidente & 8.17*** & 9.14*** & 10.83*** & 3.93** & 2.42 \\
+{} & (2.7) & (2.97) & (3.82) & (1.58) & (1.6) \\
+Inflação_{log} & -0.42* & -0.76** & -1.27** & -0.01** & -0.21*** \\
+{} & (0.22) & (0.33) & (0.65) & (0.09) & (0.08) \\
+$t$ & -4.47*** & -4.2*** & -3.92*** & & \\
+{} & (0.82) & (0.85) & (1.37) & & \\
+$t^{2}$ & 0.71*** & 0.64*** & 0.60** & & \\
+{} & (0.15) & (0.15) & (0.25)& & \\
+$t^{3}$ & -0.03*** & -0.03*** & -0.03** & & \\
+{} & (0.01) & (0.01) & (0.1) & & \\
+Log-likelihood & -53.14 & -52.29 & -26.47 & -218.12 & -148.72 \\
+Clusters & 102 & 102 & 82 & 102 & 82 \\
+N & 421 & 421 & 328 & 421 & 328 \\
+\bottomrule
+\end{tabular}%
+}{ %
+\nota{$\ast\ast\ast p<0.01; \ast\ast p<0.05; \ast p< 0.1$. Os modelos foram estimados por \textit{maximum likelihood}. Erros-padrão robustos com \textit{cluster} para os presidentes entre parênteses. As constantes foram omitidas e a variável inflação foi atrasada.}
+}
+\end{table}
+
+Conforme indica a tabela, todos os modelos são consistentes com as hipóteses 1 e 2, e apresentam os sinais esperados em quase todas as variáveis. Congressos capazes de bloquear mudanças no \textit{status quo} e mais fragmentados aumentam a probabilidade de vermos um gabinete sobredimensionado -- ainda que a estimativa do efeito desta  última varie bastante entre os modelos. Inflação elevada, proximidade das eleições e o tamanho da representação do partido do presidente no congresso também apresentam efeitos significantes e condizentes com as expectativas: quando os preços sobem, presidentes perdem popularidade (presume-se) e se tornam menos capazes de administrar coalizões grandes; já no início de seus mandatos, ou quando seus partidos possuem grandes bancadas, o contrário ocorre.
+
+Presidentes mais extremados ideologicamente e congressos mais polarizados diminuem a probabilidade de surgirem grandes coalizões, o que intuitivamente faz sentido: coalizões com partidos próximos ideologicamente são mais fáceis de serem geridas; do mesmo modo, presidentes mais moderados têm menores dificuldades de atrair partidos aos seus gabinetes. A maior surpresa fica por conta da variável que mensura o poder presidencial, que é significativa nos modelos 1 e 4 mas apresenta efeito contrário do que previa a Hipótese 3, isto é, presidentes que contam mais poderes legislativos são \textit{mais} propensos a formar coalizões sobredimensionadas. Verificando o efeito de apenas alguns dos indicadores que de poder presidencial mencionados pela literatura como importantes, entretanto, o modelo 2 mostra que nenhum deles é significativo. Controle do processo orçamentário e poder de expedir decretos apresentam sinais esperados nos modelos 2 e 3, mas não os mantêm nas outras especificações. Por seu turno, o efeito do poder de veto é o mais inconsistente de todos, embora seja significativo e apresente o sinal esperado no modelo 5: de acordo com este, quando possui o poder de evitar mudanças no \textit{status quo} possivelmente contrárias aos seus interesses, presidentes são menos impelidos à formar gabinetes grandes.
+
+Das variáveis de interesse, as com efeito mais substantivo são poder presidencial, polarização no congresso, força do legislativo e, nos três primeiros modelos, tempo transcorrido desde o último gabinete sobredimensionado. Centrando todas as variáveis do modelo 1 e estipulando o número de anos desde o último gabinete sobredimensionado, \textit{t}, em dois anos\footnote{Como existe grande dependência temporal na variável dependente, qualquer valor inferior ou superior a dois tende a determinar a probabilidade prevista. Portanto, dois é o número de anos que mais ou menos aproxima 50\% de probabilidade do \textit{outcome} de interesse.}, a diferença na probabilidade prevista de um presidente com o máximo de poderes legislativos na amostra (95) formar uma coalizão sobredimensionada e outro com mínimo de poderes (22.45) é de 9\%; por sua vez, o congresso mais forte da amostra gera uma probabilidade de surgir uma coalizão \textit{surplus} de 6\% a mais do que o congresso mais fraco; e, por fim, o menor valor de polarização ideológica registrada está associada a uma probabilidade de 16\% a mais do que o mais polarizado\footnote{Todas estas são estimativas médias, e algumas delas não atingem níveis convencionais de significância. Usando os valores da amostra, e não a média das variáveis, essas mesmas probabilidades são de, respectivamente, 8\%, 9\% e 20\%.}. A~\hyperref[fig:figura1]{Figura 1} ajuda a ilustrar este último efeito. Especificamente, ela mostra que a probabilidade de surgir uma coalizão sobredimensionada diminui conforme a polarização no congresso aumenta.
+
+\begin{figure}[htb]
+	\label{fig:figura1}
+	\caption{Efeito da polarização no congresso sobre a probabilidade de ocorrência de coalizões sobredimensionadas (IC 95\%)}
+	\begin{center}
+	    \includegraphics[scale=1.5]{polarization.pdf}
+	\end{center}
+	\legend{Fonte: elaboração própria.}
+\end{figure}
+
+
+Outra variável de interesse com efeito mais substantivo é o Número Efetivo de Partidos Parlamentares. Como previa a Hipótese 2, congressos com mais partidos aumentam a oferta de parceiros potenciais e permitem aos presidentes explorar problemas coordenativos entre estes. De acordo com o modelo 2, a estimativa deste efeito é considerável e corrobora aquela hipótese: com as demais variáveis na média e $t = 2$, um congresso com NEPP igual a 2 possui 4\% de probabilidade de ter uma coalizão sobredimensionada; já com NEPP igual a 10, a probabilidade aumenta para 34\%. De qualquer modo, como a incerteza nessa estimativa é muito elevada, outra abordagem melhor ilustra esse efeito. Simulando os coeficientes e a matriz de variância-covariância do modelo 2 mil vezes \footnote{Utilizei o conjunto de macros CLARIFY, de Tomz et al., (\citeyear{tomz2003}), para gerar essas quantidades de interesse.}, a distribuição das probabilidades de surgirem coalizões sobredimensionadas quando o NEPP é de 2 e de 10, respectivamente, é apresentada na~\hyperref[fig:figura2]{Figura 2}. Como é possível verificar, a diferença entre a média das estimativas oculta os platôs mais salientes nas extremidades, mais condizentes com a hipótese inicial.
+
+\begin{figure}[htb]
+	\label{fig:figura2}
+	\caption{Distribuição do efeito do Número Efetivo de Partidos Parlamentares sobre a probabilidade de ocorrência de coalizões sobredimensionadas}
+	\begin{center}
+	    \includegraphics[scale=1.1]{enp.pdf}
+	\end{center}
+	\legend{Fonte: elaboração própria.}
+\end{figure}
+
+
+Por fim, o efeito da dependência temporal de um ano para outro nos três primeiros modelos merecem um comentário. Quando o gabinete imediatamente anterior é sobredimensionado, a probabilidade de que o corrente também seja é de 65\%, de acordo com o modelo 1. Como seria de se esperar, gabinetes multipartidários frequentemente duram mais do que um ano, mas esse efeito de continuidade desaparece rapidamente: quando a distância temporal entre um gabinete sobredimensionado e outro é maior do que dois anos, a probabilidade deste também ser sobredimensionado é quase 0. Embora não desapareçam repentinamente, portanto, governos com coalizões grandes parecem não durar mais do que um mandato de 4 anos, em média.
+
+Com apenas um indicador binário para captar a presença de coalizões sobredimensionadas, gabinetes com apenas um pequeno partido adicional, como muitos dos formados pela \textit{Concertación}, no Chile, são indistinguíveis de outros com mais partidos. Para contornar isso, os modelos 4 e 5, que empregam o número de partidos excedentes na coalizão como variável dependente. Os principais resultados estão de acordo com os modelos anteriores. O poder presidencial atinge significância, mas, novamente, no sinal oposto ao que previa a Hipótese 3. Fixando as demais variáveis do modelo 4 na média, um presidente com o \textit{score} máximo no índice de poder presidencial aumenta em 0.34 o número esperado de partidos adicionais na coalizão; já utilizando os valores originais da amostra, fixando apenas o valor da variável de interesse, mesmo número chega a quase 1. A~\hyperref[fig:figura3]{Figura 3} exibe este efeito para todos os valores do índice de poder presidencial.
+
+\begin{figure}[htb]
+	\label{fig:figura3}
+	\caption{Efeito do poder presidencial sobre o número esperado de partidos adicionais na coalizão}
+	\begin{center}
+	    \includegraphics[scale=1]{negretto.pdf}
+	\end{center}
+	\legend{Fonte: elaboração própria.}
+\end{figure}
+
+
+No modelo 5, Número Efetivo de Partidos Parlamentares mantém o efeito positivo, agora sobre o valor esperado de partidos adicionais na coalizão, e adquire uma estimativa mais precisa. De todo o modo, de acordo com o modelo 5, a mudança de 2 para 10 partidos efetivos gera um aumento esperado de 0.08 partidos adicionais na coalizão, com as demais variáveis fixadas na média. Quanto à efetividade do legislativo, apesar da redução na amostra por ela não estar disponível para todos os casos, a diferença entre o congresso mais efetivo e o menos efetivo é de 0.33 partidos adicionais. Isoladamente, a variável com efeito mais substantivo no modelo 5 continua sendo a polarização no congresso: a maior polarização registrada na amostra provoca um aumento de 0.51 partidos adicionais esperados maior do que o menos polarizados, todo o resto fixo.
+
+Nos modelos 6, 7, 8 e 9 da~\hyperref[table:tabela2]{Tabela 2}, apenas os seis países com ocorrência de coalizões sobredimensionadas no período foram analisados, gerando, assim, uma amostra mais balanceada\footnote{Em nenhum deles a variável \textit{Efetividade do Legislativo}, já que, por ter observações incompletas, a sua inclusão reduziria ainda mais o tamanho da amostra.}. Embora os resultados não se alterem substancialmente, o descarte das demais observações implica que esta amostra não é minimamente representativa da América Latina e, por isso, os resultados não podem ser generalizados. 
+
+\begin{table}[htp]
+\IBGEtab{\caption{Determinantes da ocorrência de coalizões governamentais sobredimensionadas em seis países da América Latina, 1979-2012}
+\label{table:tabela2}
+}{%
+\begin{tabular}{lcccc}
+\toprule
+{} & \textbf{Modelo 6} & \textbf{Modelo 7} & \textbf{Modelo 8} & \textbf{Modelo 9} \\
+\midrule
+Número efetivo de partidos & 0.38* & 0.20 & 0.35*** & 0.29*** \\
+{} & (0.21) & (0.23) & (0.09) & (0.07) \\
+Força do legislativo (Polcon3) & 5.98*** & 6.5*** & 1.65* & 1.7** \\
+{} & (1.83) & (1.75) & (0.88) & (0.79) \\
+Poder presidencial (Negretto) & 0.05** & & 0.02** &  \\
+{} & (0.02) & & (0.01) &  \\
+Poder de veto & & -7.69 & & -2.29 \\
+{} & & (4.97) &  & (1.68) \\
+Controle do orçamento & & 1.84 &  & 0.58 \\
+{} & & (1.24) &  & (0.72) \\
+Decreto legislativo & & -0.41 &  & -0.11 \\
+{} & & (2.12) &  & (0.64) \\
+\% de cadeiras do presidente & 9.88*** & 9.69*** & 3.66**  & 3.54*** \\
+{} & (3.12) & (2.82) & (1.58) & (1.34) \\
+Extremismo do presidente & -1.74*** & -1.59*** & -0.65** & -0.72*** \\
+{} & (0.54) & (0.43) & (0.27)  & (0.16) \\
+Polarização no congresso & -3.42 & 0.37 & -0.22 & 1.07 \\
+{} & (4.14) & (5.12) & (2.46) & (2.28) \\
+Ciclo eleitoral & 1.08** & 1.19** & 0.47 & 0.54* \\
+{} & (0.55) & (0.55) & (0.37) & (0.31) \\
+Inflação_{log} & -0.48** & -0.64* & -0.26** & -0.31*** \\
+{} & (0.23) & (0.34) & (0.1) & (0.09) \\
+Log-likelihood & -67.7 & -66.15 & -159.46 & -158.18 \\
+Clusters & 36 & 36 & 36 & 36 \\
+N & 154 & 154 & 154 & 154 \\
+\bottomrule
+\end{tabular}%
+}{%
+\nota{$\ast\ast\ast p<0.01; \ast\ast p<0.05; \ast p< 0.1$. Os modelos foram estimados por \textit{maximum likelihood}. Erros-padrão robustos com \textit{cluster} para os presidentes entre parênteses. As constantes foram omitidas e a variável inflação foi atrasada.}
+}
+\end{table}
+
+Como os resultados indicam, não existem alterações na significância e no sinal das principais variáveis, embora algumas modificações sejam perceptíveis. Nos modelos 6 e 7, que inclui efeitos-fixos para os países e o indicador binário de presença de coalizões \textit{surplus} como variável dependente, o efeito da polarização ideológica apresenta sinais opostos, mas acompanhas de erros grandes. Apesar do pequeno número de casos, o Número Efetivo de Partidos Parlamentares, o poder do presidente e força do congresso atingem níveis de significância. Todo resto fixado na média, a diferença na probabilidade de formar uma coalizão sobredimensionada entre o presidente com maior \textit{score} no índice de poder presidencial e o menor é de 29\%; entre o congresso mais forte e o mais fraco, de 13\%; e, entre um congresso com 2 e 10 partidos efetivos, 5\%. À exceção da fragmentação partidária, portanto, o impacto dos poderes legislativos do presidente e da capacidade do congresso de impedir mudanças no \textit{status quo} se mantêm nesta amostra reduzida.
+ 
+Nos modelos 8 e 9, por fim, o número de partidos adicionais foi novamente utilizado como variável dependente. De forma semelhante aos modelos 4 e 5, os sinais das variáveis de interesse se mantêm e quase todas atingem níveis convencionais de significância -- à exceção, também aqui, dos três indicadores de poderes presidenciais no modelo 9. Controlando os demais preditores neste, o congresso mais forte da amostra gera um número esperado de partidos adicionais de 0.29, contra 0 de outro com a menor força registrada. No caso do poder presidencial, segundo a estimativa do modelo 4, esse valor vai de 0.24 a 0.02 partidos adicionais, para o presidente mais forte e mais fraco na amostra, respectivamente. Ao contrário, polarização, extremismo do presidente e Número Efetivo de Partidos apresentam todos impacto reduzido em ambos os modelos.
+
+\FloatBarrier
+\section{Testes adicionais}
+
+Para explorar melhor os dados, o~\hyperref[chap:robustez]{Apêndice B} apresenta os resultados de outros modelos estimados, que incluem operacionalizações alternativas de algumas variáveis, controles adicionais e remoção de alguns países da amostra. Embora algumas alterações se verifiquem, os principais resultados apresentados acima se mantêm.

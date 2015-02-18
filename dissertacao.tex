@@ -1,17 +1,17 @@
 % -------------------------------------------------------------
-% Source da minha Dissertação de Mestrado em Ciência Política
+% Source da minha Dissertação de Mestrado em Ciência Política (2/2015)
 % -------------------------------------------------------------
 
 % DOCUMENTO
-\documentclass[article,12pt,oneside,a4paper,spanish,english,brazilian]{abntex2}
+\documentclass[12pt,oneside,a4paper,spanish,english,brazilian, sumario=abnt-6027-2012, chapter=TITLE ]{abntex2}
 
-% CONFIGURACOES DO PPGPOL
+% CONFIGURACOES DO PPGPOL/UFRGS
 \usepackage{PPGPOL}
 
 % INFORMACOES
-\titulo{Coalizões governamentais sobredimensionadas na América Latina, 1978-2010}
+\titulo{Coalizões Governamentais Sobredimensionadas na América Latina, 1979-2012}
 \author{Fernando Meireles}
-\data{2014}
+\data{2015}
 \instituicao{Universidade Federal do Rio Grande do Sul}
 \departamento{Instituto de Filosofia e Ciência Humanas}
 \programa{Programa de Pós-Graduação em Ciência Política}
@@ -20,45 +20,80 @@
 \orientador{Dr. Paulo Sérgio Peres}
 \preambulo{Dissertação apresentada ao Programa de Pós-Graduação em Ciência Política do Instituto de Filosofia e Ciências Humanas da Universidade Federal do Rio Grande do Sul como requisito parcial para a obtenção do título de Mestre em Ciência Política.}
 
-% PDF
-\definecolor{minha}{RGB}{59,95,95}
-\makeatletter
-\hypersetup{
-pdftitle={\@title},
-pdfauthor={Fernando Meireles},
-pdfsubject={Dissertação (Mestrado)},
-pdfcreator={LaTex},
-pdfkeywords={Presidencialismo}{Relações Executivo-Legislativo}{Coalizões Governamentais},
-colorlinks=true,
-linkcolor=minha,
-citecolor=minha,
-filecolor=black,
-urlcolor=minha,bookmarksdepth=4}
-\makeatother
-\checkandfixthelayout
-
 % TEXTO
 \begin{document}
 \pretextual
 \imprimircapa
 \imprimirfolhaderosto
-\textual
 
-% Resumo
+% FICHA CATALOGRAFICA
+\input{fichacat}
+\clearpage
+
+% FOLHA DE APROVACAO
+%\input{aprovacao}
+
+% AGRADECIMENTOS
+%\input{agrad}
+
+% RESUMO
 \input{resumo}
 \newpage
 
-% Abstract
+% ABSTRACT
+\input{abstract}
+\newpage
 
+% LISTAS
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\clearpage
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\clearpage
 
-% Introducao
+% SIGLAS
+%\input{siglas}
+
+% SUMARIO
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\clearpage
+
+\textual
+\pagestyle{simple}
+
+% INTRODUCAO
 \input{introducao}
 \newpage
 
-% Segunda seção
+% SEGUNDA SECAO
 \input{revisao}
 \newpage
 
-\bibliography{dissert}
+% TERCEIRA SECAO
+\input{analise}
+\newpage
+
+% QUARTA SECAO
+\input{resultados}
+\newpage
+
+% QUINTA SECAO
+\input{discussao}
+\newpage
+
+% CONCLUSAO
+\input{conclusao}
+\newpage
+
+\postextual
+
+% APENDICES
+\input{apendices}
+\newpage
+
+% REFERENCIAS
+\bibliography{biblio}
 
 \end{document}
