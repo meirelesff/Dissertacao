@@ -1,0 +1,231 @@
+
+
+.license {
+  font-size: 14px;
+  color: #a9a9a9;
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+}
+
+/* Styles for Title Slide */
+
+.title-slide {
+  background-color: #F5F5F5;
+}
+
+.title-slide hgroup > h1{
+  font-family: 'Vollkorn', sans-serif; 
+  font-weight:normal;
+  font-size: 41.4px;
+  position: relative;
+  right: 70px;
+  color: #404040;
+}
+
+.title-slide hgroup > h2{
+  font-family: 'Vollkorn', 'Calibri', sans-serif;
+  font-size: 24px;
+  font-weight:normal;
+  color: #707070;
+  position: relative;
+  right: 65px;
+}
+
+.title-slide hgroup > p{
+  font-family: 'Calibri', sans-serif;
+  font-size: 17px;
+  color: #606060;
+  position: relative;
+  right: 60px;
+  line-height:1;
+}
+
+/* Fonts and Spacing */
+article p, article li, article li.build{
+  font-family: 'Vollkorn', 'Garamond','Crimson Text', 'Palatino', serif;
+  text-align: justify;
+  font-size:21.7px;
+  line-height: 1.5em;
+  color: #5B5B5B;
+}
+
+slide:not(.segye){
+  background-color:#F5F5F5;
+}
+
+slide:not(.segue) h2{
+  font-family: 'Vollkorn', 'Calibri', Arial, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  text-transform: normal;
+  letter-spacing: -2px;
+  line-height: 1.2em;
+/* color: #193441;*/
+/* color: #02574D;*/
+  color: #202020;
+}
+
+/* Reduce Space between Title and Body */
+slides > slide > hgroup + article {
+  margin-top: 35px;
+}
+
+/* Remove Border, Margins and Padding from iframe */
+iframe {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+color: #ff8b2c;  
+}
+/* Knitr Images */
+.rimage.left {
+  text-align: left;
+}
+.rimage.right {
+  text-align: right;
+}
+.rimage.center {
+  text-align: center;
+}
+
+/* Quotes and Shout (for io2012, custom) */
+article q {
+  font-family: 'Crimson Text', sans-serif;
+}
+
+
+q {
+  display: block;
+  font-size: 44px;
+  line-height: 56px;
+  margin-left: 50px;
+  margin-top: 100px;
+  margin-right: 150px;
+}
+
+q::before {
+  content: '“';
+  position: absolute;
+  display: inline-block;
+  margin-left: -2.1em;
+  width: 2em;
+  text-align: right;
+  font-size: 90px;
+  color: silver;
+}
+
+q::after {
+  content: '”';
+  position: absolute;
+  margin-left: .1em;
+  font-size: 90px;
+  color: silver;
+}
+
+div.author {
+  text-align: right;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-right: 150px;
+}
+
+div.author::before {
+  content: '—';
+}
+
+q.shout:before {
+  content: '';
+  position: absolute;
+  margin-left: -0.5em;
+}
+
+q.shout:after {
+  content: '';
+  position: absolute;
+  margin-left: 0.1em;
+}
+
+/* Tables */
+table caption{
+  margin-top: 20pt;
+  font-weight: normal;
+  font-family: "Trebuchet MS", Garuda, sans-serif;
+}
+
+table th {
+  text-transform: capitalize;
+}
+
+/* Tables */
+
+table {
+  border: none;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'Trebuchet MS';
+  font-weight: bolder;
+  color: rgb(102, 102, 102);
+}
+
+table.rmdtable {
+  width: 100%;
+  border-collapse: -moz-initial;
+  border-collapse: initial;
+  border-spacing: 2px;
+  border-bottom: none;
+}
+table thead {
+  border-top: none;
+  border-bottom: none;
+}
+table th, table td, table caption {
+  margin: 0;
+  padding: 2pt 6pt;
+  text-align: left;
+  vertical-align: top;
+}
+table.rmdtable th {
+  color: #F5F5F5;
+  font-size: 18px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(40%, #4387fd), color-stop(80%, #2a7cdf)) no-repeat;
+  background: -webkit-linear-gradient(top, #404040 40%, #404040 80%) no-repeat;
+  background: -moz-linear-gradient(top, #404040 40%, #404040 80%) no-repeat;
+  background: -o-linear-gradient(top, #404040 40%, #404040 80%) no-repeat;
+  background: linear-gradient(top, #404040 40%, #404040 80%) no-repeat;
+}
+table td {
+  border-bottom: none;
+}
+table.rmdtable tr:nth-child(odd) {
+  background-color: #EBEBEB;
+}
+
+/* Styling for Ordered Lists (only for io2012) */
+ol {
+  margin-left: 2em;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+ol li {
+  margin-bottom: 0.5em;
+}
+
+ol li ol {
+  margin-left: 2em;
+  margin-bottom: 0;
+}
+
+ol ul {
+  margin-top: .5em;
+}
+
+ol {
+  list-style-type: decimal;
+}

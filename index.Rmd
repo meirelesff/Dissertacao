@@ -1,0 +1,162 @@
+---
+title: "Coalizões sobredimensionadas na América Latina"
+subtitle: "Como a relação entre executivo e legislativo influencia o tamanho das coalizões"
+author: "Fernando Meireles"
+date: "Universidade Federal do Rio Grande do Sul"
+output:
+  ioslides_presentation:
+    self_contained: false
+    widescreen: false
+    css: estilo.css
+---
+## Motivação
+
+Por que presidentes muitas vezes formam coalizões com mais partidos do que o necessário para obter maioria legislativa?
+
+>- Coalizões grandes são custosas e mais difíceis de administrar;
+
+>- Conflitos surgem com mais frequência em gabinetes mais polarizados;
+
+>- Presidentes possuem maior dificuldade para monitorar ministros de outros partidos;
+
+>- Em alguns países, presidentes minoritários sequer formam coalizões.
+
+## A visão da literatura
+
+Fatores que explicariam o tamanho das coalizões no presidencialismo:
+
+>- Presidentes com muitos poderes legislativos não têm incentivos para formar coalizões;
+
+>- O número de cadeirase a posição ideológica do partido do presidente determinam os custos e as vantagens de formar coalizões maiores ou menores;
+
+>- Os estudos existentes não oferecem respostas para o caso das coalizões sobredimensionadas.
+
+## Proposição central
+
+A assimetria de poder entre o presidente e o congresso geram incentivos para que coalizões de diferentes tamanhos surjam.
+
+>- Congressos fortes incentivam presidentes a formar coalizões maiores;
+
+>- Presidentes fortes, por outro lado, têm menores incentivos para formar coalizões grandes.
+
+## Análise empírica
+
+- __Amostra__: 168 coalizões únicas nos 18 países presidencialistas da América Latina entre 1979 e 2012 (unidade país-ano);
+
+- __Principais variáveis independentes__: índice de poder presidencial, índice de poder do congresso, efetividade do congresso, Número Efetivo de Partidos Parlamentares (NEPP), polarização ideológica no congresso e extremismo ideológico do presidente.
+
+## Análise empírica
+
+- __Variável dependente__: _dummy_ indicando a existência de uma coalizão sobredimensionada num país `i` num ano `t`;
+```{r, message=FALSE, echo=FALSE, fig.width=6.9, fig.height=3.5, fig.align='center', cache=TRUE}
+require(foreign)
+subdados <- read.dta("bdparcial.dta")
+dados <- subdados[subdados$country %in% c("Bolivia", "Brasil", "Chile", "Colombia", "Rep Dominicana", "Peru"),]
+levels(dados$country)[7] <- "R. Dom."
+dados$surplusDummy <- as.factor(dados$surplusDummy)
+dados <- within(dados, surplusDummy <- relevel(surplusDummy, ref = 2))
+count <- table (dados$surplusDummy, droplevels(dados$country))
+par(xpd=TRUE)
+barplot(count, col=c("grey20", "grey80"), border=NA)
+legend("bottom", inset=c(-0.2,-0.68), title="",c("Sobredimensionadas","Outros"),bty="n", border=NA, fill=c("grey20", "grey80")) 
+ 
+```
+
+## Resultados
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, fig.width=8.1, fig.height=4.5, fig.align='left'}
+library(foreign)
+library(MASS)
+library(coefplot)
+library(gridExtra)
+dados1 <- read.dta("bd4.dta")
+
+fit1 <- glm(surplusDummy ~ negretto_leg1+ pres_seats + range1 + distance1 + cicle + h_polcon3 + t + t2 + t3 + infl + enp, family="binomial", dados1)
+
+fit2 <- glm.nb(surplus ~ negretto_leg1+ pres_seats + range1 + distance1 + cicle + h_polcon3 + infl + enp, dados1)
+
+p1 <- coefplot(fit1, intercept=F, color="grey20") + theme_set(theme_bw()) + labs(title="Binomial") + theme(axis.text=element_text(colour="grey50"), axis.title=element_blank(),panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), panel.border = element_blank(), plot.background = element_rect(fill ='#F5F5F5'))
+
+p2 <- coefplot(fit2, intercept=F, color="grey20") + theme_set(theme_bw()) + labs(title="Poisson") + theme(axis.text=element_text(colour="grey50"), axis.title=element_blank(),panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), panel.border = element_blank(), plot.background = element_rect(fill ='#F5F5F5'))
+
+grid.arrange(p1, p2, ncol=2)
+```
+
+## Resultados
+
+- A força do congresso pode aumentar cerca de 6% a probabilidade de surgir um gabinete sobredimensionado; se ele for efetivo, o número esperado de partidos adicionais na coalizão é de cerca de 0.33;
+
+>- A fragmentação partidária pode aumentar, na média, em até 30% a probabilidade de ocorrência de uma coalizão sobredimensionada (valor que pode ser maior);
+
+>- Presidentes fortes aumentam, e não diminuem, a probabilidade de surgirem coalizões sobredimensionadas (o número de partidos adicionais varia cerca de 0.33).
+
+## Testes adicionais
+
+- Os resultados se mantêm com outras especificações, mesmo controlando pelo status da _Freedom House_, a formação das listas partidárias, fragmentação étnica e diferentes operacionalizações das variáveis principais;
+
+>- A remoção alternada de cada um dos países da amostra também não altera os principais resultados.
+
+## Influência das observações
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, fig.width=7.7, fig.height=5, fig.align='left'}
+
+library(boot)
+plot(glm.diag(fit1)$h, ylim=c(0,1), xlab = "Observações", ylab = "Distância de Cook", cex.axis = 0.9, col = "#ff9000", pch =  20, bty = "n", main = "" )
+
+abline(h=0.5,col="grey50",lty=2)
+```
+
+## Classificação ideológica dos partidos (polarização)
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, fig.width=8.1, fig.height=3.8, fig.align='left'}
+
+par(mfrow=c(1,2))
+
+id1 <- lm(range2 ~ range1, dados1)
+id2 <- lm(range3 ~ range1, dados1)
+  
+plot(dados1$range1, dados1$range2, xlab = "Alcántara", ylab = "Baker e Greene", cex.axis = 0.9, col = "#ff9000", pch =  20, bty = "n", main = "")
+legend("bottomright", bty="n", cex = 0.8, legend=paste("R2 =", format(summary(id1)$adj.r.squared, digits=2)))
+plot(dados1$range1, dados1$range3, xlab = "Alcántara", ylab = "Coppdge", cex.axis = 0.9, col = "#ff9000", pch =  20, bty = "n", main = "")
+legend("bottomright", bty="n", cex = 0.8, legend=paste("R2 =", format(summary(id2)$adj.r.squared, digits=2)))
+
+```
+
+## Classificação ideológica dos partidos (extremismo)
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, fig.width=8.1, fig.height=3.8, fig.align='left'}
+
+par(mfrow=c(1,2))
+
+id3 <- lm(distance2 ~ distance1, dados1)
+id4 <- lm(distance3 ~ distance1, dados1)
+  
+plot(dados1$distance1, dados1$distance2, xlab = "Alcántara", ylab = "Baker e Greene", cex.axis = 0.9, col = "#ff9000", pch =  20, bty = "n", main = "")
+legend("bottomright", bty="n", cex = 0.8, legend=paste("R2 =", format(summary(id3)$adj.r.squared, digits=2)))
+plot(dados1$distance1, dados1$distance3, xlab = "Alcántara", ylab = "Coppdge", cex.axis = 0.9, col = "#ff9000", pch =  20, bty = "n", main = "")
+legend("bottomright", bty="n", cex = 0.8, legend=paste("R2 =", format(summary(id4)$adj.r.squared, digits=2)))
+
+```
+
+
+## NEPP vs. F (Rae)
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, fig.align='left'}
+
+par(mfrow=c(1,1))
+plot(dados1$enp, dados1$dpi_tf, xlab = "NEPP", ylab = "F (Rae)", cex.axis = 0.9, col = "#ff9000", pch =  20, bty = "n", main = "")
+
+```
+
+
+## Conclusão
+
+- Congressos fortes, bicamerais, que conseguem impedir mudanças no _status quo_ e fiscalizar o executivo incentivam presidentes a cooperar, formando coalizões de tamanho proporcionalmente grandes;
+
+>- Presidentes que contam com maiores poderes legislativos, por outro lado, não são mais propensos à contornar o processo legiferante ordinário; ao contrário, talvez eles sejam justamente os mais aptos a gerenciar coalizões grandes.
+
+>- A assimetria de poderes entre executivo e legislativo, ao menos na América Latina, restringe efetivamente as opções disponíveis aos presidentes na hora de formar gabinetes multipartidários.
+
+----
+
+
